@@ -2,6 +2,9 @@
 
 }
 
+.default:hover{
+background: black;
+}
 .red {
     background: red;
 }

@@ -10,3 +10,8 @@
 .error {
     color: red;
 }
+
+.input1{
+    border: 2px solid greenyellow;
+    background-color: green;
+}
