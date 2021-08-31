@@ -4,7 +4,9 @@ import s from './Juniors.module.css'
 
 function Header() {
     return (
-        <div className={s.wrapper}>
+               <div className={s.dropdown}>
+            <button className={s.dropbtn}>Hi</button>
+            <div className={s.dropdown_content}>
             <div>
                 <NavLink
                     className={s.pre_junior} to='/pre-junior'>
@@ -22,8 +24,9 @@ function Header() {
                     junior+
                 </NavLink>
             </div>
+            </div>
         </div>
-    )
+          )
 }
 
 export default Header
