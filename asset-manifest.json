@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/domaska_Ignat/static/css/main.156a9424.chunk.css",
-    "main.js": "/domaska_Ignat/static/js/main.6a02bf1a.chunk.js",
-    "main.js.map": "/domaska_Ignat/static/js/main.6a02bf1a.chunk.js.map",
+    "main.js": "/domaska_Ignat/static/js/main.c8998da2.chunk.js",
+    "main.js.map": "/domaska_Ignat/static/js/main.c8998da2.chunk.js.map",
     "runtime-main.js": "/domaska_Ignat/static/js/runtime-main.220ad406.js",
     "runtime-main.js.map": "/domaska_Ignat/static/js/runtime-main.220ad406.js.map",
-    "static/js/2.13458ce0.chunk.js": "/domaska_Ignat/static/js/2.13458ce0.chunk.js",
-    "static/js/2.13458ce0.chunk.js.map": "/domaska_Ignat/static/js/2.13458ce0.chunk.js.map",
+    "static/js/2.2d6ac420.chunk.js": "/domaska_Ignat/static/js/2.2d6ac420.chunk.js",
+    "static/js/2.2d6ac420.chunk.js.map": "/domaska_Ignat/static/js/2.2d6ac420.chunk.js.map",
     "index.html": "/domaska_Ignat/index.html",
     "static/css/main.156a9424.chunk.css.map": "/domaska_Ignat/static/css/main.156a9424.chunk.css.map",
-    "static/js/2.13458ce0.chunk.js.LICENSE.txt": "/domaska_Ignat/static/js/2.13458ce0.chunk.js.LICENSE.txt"
+    "static/js/2.2d6ac420.chunk.js.LICENSE.txt": "/domaska_Ignat/static/js/2.2d6ac420.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.220ad406.js",
-    "static/js/2.13458ce0.chunk.js",
+    "static/js/2.2d6ac420.chunk.js",
     "static/css/main.156a9424.chunk.css",
-    "static/js/main.6a02bf1a.chunk.js"
+    "static/js/main.c8998da2.chunk.js"
   ]
 }
