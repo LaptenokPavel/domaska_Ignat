@@ -2,10 +2,6 @@ import React, {useState} from 'react'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 
 function Clock() {
-
-
-
-
     const [timerId, setTimerId] = useState<number>(0)
     const [date, setDate] = useState<Date>(new Date())
     const [show, setShow] = useState<boolean>(false)
@@ -17,21 +13,25 @@ function Clock() {
     let month = date.getMonth()
     let year = date.getFullYear()
 
-    const multiplay = (value:number) => value < 10 ? '0' + value : value
+    const multiplay = (value: number) => value < 10 ? '0' + value : value
 
     const clockStyle = {
         width: '80px',
+        height: '20px',
         border: '1px solid green',
         backgroundColor: 'aquamarine',
-        marginTop: '20px'
+        marginTop: '20px',
+
     }
 
     const dateStyle = {
         width: '80px',
-        border: '1px solid red',
-        backgroundColor: 'orange',
-        marginTop: '20px',
-        marginBottom: '20px'
+        height: '20px',
+        backgroundColor: 'orange'
+    }
+
+    const styleInvisible = {
+        height: '20px',
     }
 
     const buttonBackground = {backgroundColor: 'green'}
@@ -42,7 +42,7 @@ function Clock() {
     const start = () => {
         stop()
         const id: number = window.setInterval(() => {
-             setDate(new Date())
+            setDate(new Date())
         }, 1000)
         setTimerId(id)
     }
@@ -54,14 +54,14 @@ function Clock() {
         setShow(false)
     }
 
-    const stringTime =  <div style={clockStyle}>
+    const stringTime = <div style={clockStyle}>
         <span>{multiplay(hours)}:</span>
         <span>{multiplay(minits)}:</span>
         <span>{multiplay(seconds)}</span>
     </div> // fix with date
 
 
-    const stringDate = <div style={dateStyle}>
+    const stringDate = <div>
         <span>{multiplay(day)}:</span>
         <span>{multiplay(month)}:</span>
         <span>{multiplay(year)}</span>
@@ -78,11 +78,11 @@ function Clock() {
 
             </div>
 
-            {show && (
-                <div>
+            {show ? <div style={dateStyle}>
                     {stringDate}
                 </div>
-            )}
+                : <div style={styleInvisible}></div>
+            }
 
             <SuperButton style={buttonBackground} onClick={start}>start</SuperButton>
             <SuperButton style={buttonBackground} onClick={stop}>stop</SuperButton>
