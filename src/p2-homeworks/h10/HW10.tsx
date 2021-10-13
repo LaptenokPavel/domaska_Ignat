@@ -28,7 +28,7 @@ function HW10() {
             <hr/>
             homeworks 10
 
-
+            {/*should work (должно работать)*/}
             {loading
                 ? (<div><img src={preloader}/></div>
                 ) : (
