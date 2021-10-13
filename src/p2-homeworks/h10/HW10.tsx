@@ -30,8 +30,7 @@ function HW10() {
 
             {/*should work (должно работать)*/}
             {loading
-                ? (
-                    <div><img src={preloader}/></div>
+                ? (<div><img src={preloader}/></div>
                 ) : (
                     <div>
                         <SuperButton style={styleButton} onClick={setLoading}>set loading...</SuperButton>
